@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/images/logo.png" type="image/x-icon">
+    <title>Valdes Joël Fomena Tsatsop - Data Scientist</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">FTVJ </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#experience">Expérience</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu" id="menuToggle">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-photo">
+                <i class="fas fa-user"></i>
+            </div>
+            <h1>Valdes Joël Fomena Tsatsop</h1>
+            <p class="subtitle">Data Scientist || Data analyst || Ingenieur Logiciel</p>
+            <p>Passionné de statistiques et d'informatique, je transforme les données en insights stratégiques pour guider les décisions d'entreprise grâce au machine learning et à l'analyse prédictive.</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+                <a href="#" onclick="showCVModal()" class="btn btn-secondary">Télécharger CV</a>
+            </div>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/valdes-joël-fomena-tsatsop" class="social-link" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/fomen2001" class="social-link" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://wa.me/33668091269" class="social-link" target="_blank" title="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>À propos de moi</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <p>Actuellement en Mastère 1 Chef de Projet Data et Intelligence Artificielle à l'IA School Paris, je recherche une alternance en data science pour approfondir mes compétences pratiques.</p>
+                    <p>Fort d'une expérience professionnelle chez TDR Consulting SARL, j'ai développé une expertise solide en analyse de données, machine learning et développement de solutions data-driven. Mon objectif est de mettre ces compétences au service d'une entreprise innovante.</p>
+                    <p><strong>Rythme d'alternance :</strong> 3 semaines en entreprise / 1 semaine à l'école</p>
+                </div>
+                <div class="about-stats fade-in">
+                    <div class="stat-card">
+                        <div class="stat-number">2+</div>
+                        <p>Années d'expérience</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">5+</div>
+                        <p>Projets réalisés</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">10+</div>
+                        <p>Technologies maîtrisées</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-title">
+                <h2>Compétences</h2>
+            </div>
+            <div class="skills-grid fade-in">
+                <div class="skill-category">
+                    <h3><i class="fas fa-chart-line"></i> Data Science</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Python (Pandas, NumPy)</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Machine Learning (Scikit-learn)</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Visualisation (Matplotlib, Seaborn)</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>TensorFlow</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programmation</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Python</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>SQL</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Git/GitHub</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Streamlit</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-chart-bar"></i> Analyse & BI</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Power BI</span>
+                            <span>82%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 82%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Excel Avancé</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Analyse Statistique</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Reporting</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>AWS (EC2, S3, Lambda)</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Google Cloud Platform</span>
+                            <span>68%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 68%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Docker</span>
+                            <span>65%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 65%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>CI/CD Pipelines</span>
+                            <span>82%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 72%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-title">
+                <h2>Expérience Professionnelle</h2>
+            </div>
+            <div class="timeline fade-in">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Février 2025</div>
+                        <h3 class="timeline-title">Participant Datathon IA SCHOOL - SCHOOLAB</h3>
+                        <p><strong>IA SCHOOL, Paris</strong></p>
+                        <p>Développement d'un outil intelligent d'aide à l'organisation de mariages via la géolocalisation. Création d'une base de données complète et collaboration en équipe pluridisciplinaire pour un prototype fonctionnel.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Janvier 2024 - Décembre 2024</div>
+                        <h3 class="timeline-title">Stagiaire Professionnel en Data Science</h3>
+                        <p><strong>TDR CONSULTING SARL</strong></p>
+                        <p>Mise en œuvre de pipelines de tests et déploiement de modèles ML. Développement de modèles supervisés et non supervisés appliqués aux données terrain (agriculture, éducation). Rédaction de guides utilisateurs et formation à l'analyse de données.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Juin 2023 - Décembre 2023</div>
+                        <h3 class="timeline-title">Stage Académique en Analyse des Données</h3>
+                        <p><strong>TDR CONSULTING SARL</strong></p>
+                        <p>Collecte et analyse exploratoire de données des producteurs de cacao au Cameroun. Développement de modules d'analyse statistique et prédictive dans l'ERP UPTIMUM. Gestion avancée avec Git/GitHub.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>Projets Réalisés</h2>
+            </div>
+            <div class="projects-grid fade-in">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Outil d'Organisation de Mariages</h3>
+                    </div>
+                    <div class="project-content">
+                        <p>Développement d'une solution intelligente utilisant la géolocalisation pour aider à l'organisation de mariages. Base de données complète avec salles, photographes, traiteurs et fleuristes.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Data Science</span>
+                            <span class="tech-tag">Géolocalisation</span>
+                            <span class="tech-tag">Base de données</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h3>Analyse des Producteurs de Cacao</h3>
+                    </div>
+                    <div class="project-content">
+                        <p>Analyse exploratoire et modélisation statistique des données des producteurs de cacao au Cameroun. Visualisation interactive et insights pour l'amélioration de la production.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Matplotlib</span>
+                            <span class="tech-tag">Analyse Statistique</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>Modules ERP UPTIMUM</h3>
+                    </div>
+                    <div class="project-content">
+                        <p>Développement de modules d'analyse statistique et prédictive intégrés dans l'ERP UPTIMUM. Indicateurs de performance, modélisation de tendances et prévisions.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">ERP</span>
+                            <span class="tech-tag">Prédiction</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3>Analyse Prédictive Supermarché</h3>
+                    </div>
+                    <div class="project-content">
+                        <p>Création d'un système de prédiction des tendances pour un supermarché basé sur l'analyse de données historiques. Optimisation des stocks et des ventes.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">Analyse Prédictive</span>
+                            <span class="tech-tag">Optimisation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Application E-learning IFPCE</h3>
+                    </div>
+                    <div class="project-content">
+                        <p>Coordination des tests et mise en production d'une application e-learning. Rédaction de guides d'utilisation et maintenance des applications éducatives.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Tests</span>
+                            <span class="tech-tag">Déploiement</span>
+                            <span class="tech-tag">E-learning</span>
+                            <span class="tech-tag">Documentation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <h3>Dashboards Power BI</h3>
+                    </div>
+                    <div class="project-content">
+                        <p>Création de tableaux de bord interactifs avec Power BI pour la visualisation de données et le reporting. Analyse statistique et interprétation des résultats.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Power BI</span>
+                            <span class="tech-tag">Visualisation</span>
+                            <span class="tech-tag">Reporting</span>
+                            <span class="tech-tag">Analytics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="experience">
+        <div class="container">
+            <div class="section-title">
+                <h2>Formation</h2>
+            </div>
+            <div class="timeline fade-in">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Septembre 2025 - Septembre 2026</div>
+                        <h3 class="timeline-title">Mastère 2 Chef de Projet Data et Intelligence Artificielle</h3>
+                        <p><strong>NEXA DIGITAL SCHOOL, Paris</strong></p>
+                        <p>Approfondissement des compétences en gestion de projets data et IA. Management d'équipes techniques et stratégie data.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Janvier 2025 - Septembre 2025</div>
+                        <h3 class="timeline-title">Mastère 1 Chef de Projet Data et Intelligence Artificielle</h3>
+                        <p><strong>IA SCHOOL, Paris</strong></p>
+                        <p>Formation spécialisée en data science, machine learning et gestion de projets IA. Acquisition de compétences techniques et managériales.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Octobre 2021 - Juillet 2024</div>
+                        <h3 class="timeline-title">Licence en Science Informatique</h3>
+                        <p><strong>THE ICT UNIVERSITY, Yaoundé, Cameroun</strong></p>
+                        <p>Formation complète en informatique avec spécialisation en développement et analyse de données. Projet de fin d'études sur l'analyse prédictive.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="skills">
+        <div class="container">
+            <div class="section-title">
+                <h2>Certifications</h2>
+            </div>
+            <div class="skills-grid fade-in">
+                <div class="skill-category">
+                    <h3><i class="fas fa-certificate"></i> Coursera</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 0.8rem; display: flex; align-items: center;">
+                            <i class="fas fa-check-circle" style="color: #4682B4; margin-right: 0.5rem;"></i>
+                            Google Project Management (2023)
+                        </li>
+                        <li style="margin-bottom: 0.8rem; display: flex; align-items: center;">
+                            <i class="fas fa-check-circle" style="color: #4682B4; margin-right: 0.5rem;"></i>
+                            Introduction to Cloud Computing (2023)
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-certificate"></i> Cisco</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 0.8rem; display: flex; align-items: center;">
+                            <i class="fas fa-check-circle" style="color: #4682B4; margin-right: 0.5rem;"></i>
+                            Introduction à la Data Science (2023)
+                        </li>
+                        <li style="margin-bottom: 0.8rem; display: flex; align-items: center;">
+                            <i class="fas fa-check-circle" style="color: #4682B4; margin-right: 0.5rem;"></i>
+                            Introduction à la Cybersécurité (2022)
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-shield-alt"></i> ANSSI</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 0.8rem; display: flex; align-items: center;">
+                            <i class="fas fa-check-circle" style="color: #4682B4; margin-right: 0.5rem;"></i>
+                            Certification Sécurité Informatique (2023)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2 style="color: white;">Contactez-moi</h2>
+                <p style="color: #B0E0E6; font-size: 1.1rem; margin-top: 1rem;">Recherche active d'alternance en Data Science/Data Analyst</p>
+            </div>
+            <div class="contact-content fade-in">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>tsatsopjoelvaldes@gmail.com</p>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Téléphone</h3>
+                    <p>+33 06 68 09 12 69</p>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Localisation</h3>
+                    <p>Île-de-France, France</p>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <p>valdes-joël-fomena-tsatsop</p>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3>GitHub</h3>
+                    <p>github.com/fomen2001</p>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Disponibilité</h3>
+                    <p>3 semaines entreprise<br>1 semaine école</p>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="mailto:tsatsopjoelvaldes@gmail.com" class="btn btn-primary" style="background: white; color: #4682B4; font-size: 1.1rem; padding: 15px 40px; margin-right: 1rem;">
+                    <i class="fas fa-paper-plane" style="margin-right: 0.5rem;"></i>
+                    Envoyer un message
+                </a>
+                <a href="#" onclick="showCVModal()" class="btn btn-primary" style="background: rgba(255,255,255,0.2); color: white; font-size: 1.1rem; padding: 15px 40px; border: 2px solid white;">
+                    <i class="fas fa-download" style="margin-right: 0.5rem;"></i>
+                    Télécharger CV
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV Modal -->
+    <div id="cvModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCVModal()">&times;</span>
+            <h3><i class="fas fa-file-pdf" style="color: #e74c3c; margin-right: 0.5rem;"></i>Accès au CV</h3>
+            <p style="color: #666; margin-bottom: 1.5rem;">Pour accéder à mon CV, merci de renseigner vos informations :</p>
+            <form id="cvForm" onsubmit="downloadCV(event)">
+                <input type="text" id="visitorName" placeholder="Votre nom complet *" required>
+                <input type="email" id="visitorEmail" placeholder="Votre email *" required>
+                <input type="text" id="visitorCompany" placeholder="Votre entreprise">
+                <input type="text" id="visitorRole" placeholder="Votre poste">
+                <div style="margin-top: 1.5rem;">
+                    <button type="submit" class="btn btn-primary" style="width: 100%; margin-bottom: 1rem;">
+                        <i class="fas fa-download" style="margin-right: 0.5rem;"></i>
+                        Télécharger le CV
+                    </button>
+                </div>
+            </form>
+            <p style="font-size: 0.8rem; color: #999; margin-top: 1rem;">
+                <i class="fas fa-lock" style="margin-right: 0.3rem;"></i>
+                Vos informations sont sécurisées et utilisées uniquement pour le suivi des candidatures.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Signature Section -->
+    <section class="signature">
+        <div class="container">
+            <h2>Valdes Joël Fomena Tsatsop</h2>
+            <p>Data Scientist passionné, prêt à transformer vos données en opportunités</p>
+            <div style="margin-top: 2rem; opacity: 0.7;">
+                <i class="fas fa-chart-line" style="font-size: 2rem;"></i>
+            </div>
+           
+  <span style="display: block; gap: 0.5rem; font-size: 2rem; justify-content: center;">
+    <i class="fas fa-database" title="Données"></i>
+    <i class="fas fa-brain" title="IA / Machine Learning"></i>
+    <i class="fas fa-code" title="Code logiciel"></i>
+  </span>
+
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: #2c3e50; color: white; text-align: center; padding: 2rem 0;">
+        <div class="container">
+            <p>&copy; 2025 Valdes Joël Fomena Tsatsop. Tous droits réservés.</p>
+            <p style="margin-top: 0.5rem; opacity: 0.8;">Développé avec passion </p>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+    <script src="./js/em.js"></script>
+    <script>
+  const menuToggle = document.getElementById("menuToggle");
+  const navLinks = document.getElementById("navLinks");
+
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+</body>
+</html>
