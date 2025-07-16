@@ -27,43 +27,25 @@
 
         // CV Download with tracking
         function downloadCV(event) {
-            event.preventDefault();
-            
-            const name = document.getElementById('visitorName').value;
-            const email = document.getElementById('visitorEmail').value;
-            const company = document.getElementById('visitorCompany').value;
-            const role = document.getElementById('visitorRole').value;
+  event.preventDefault();
 
-            // Store visitor information (in a real app, this would be sent to a server)
-            const visitorData = {
-                name: name,
-                email: email,
-                company: company,
-                role: role,
-                timestamp: new Date().toISOString(),
-                action: 'CV_DOWNLOAD'
-            };
+  const data = {
+    name: document.getElementById("visitorName").value,
+    email: document.getElementById("visitorEmail").value,
+    company: document.getElementById("visitorCompany").value,
+    role: document.getElementById("visitorRole").value
+  };
 
-            // For demonstration, we'll store in localStorage and show in console
-            let visitors = JSON.parse(localStorage.getItem('cvDownloads') || '[]');
-            visitors.push(visitorData);
-            localStorage.setItem('cvDownloads', JSON.stringify(visitors));
+  fetch("https://script.google.com/macros/s/AKfycbxqeE5WZlLb_0osviyQXbZkoY4PfNidG6L4vbVBAkiQqtGpCcKWNIaaLJO897y1YLkN/exec", {
+    method: "POST",
+    mode: "no-cors",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(data)
+  }).then(() => {
+    window.location.href = "cv_Joel.pdf"; // adapte à ton vrai fichier
+  });
+}
 
-            console.log('Nouveau téléchargement de CV:', visitorData);
-            console.log('Tous les téléchargements:', visitors);
-
-            // Show success message
-            alert(`Merci ${name}! Votre demande a été enregistrée. Le téléchargement va commencer...`);
-
-            // Here you would typically trigger the actual CV download
-            // For now, we'll simulate it
-            setTimeout(() => {
-                // Create a dummy download link (replace with actual CV file)
-                const link = document.createElement('a');
-                link.href = 'data:text/plain;charset=utf-8,CV de Valdès Joël Fomena Tsatsop - Data Scientist';
-                link.download = 'CV_Valdes_Joel_Fomena_Tsatsop.pdf';
-                link.click();
-                
-                closeCVModal();
-            }
-        }    
+          

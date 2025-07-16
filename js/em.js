@@ -112,6 +112,29 @@
             });
         });
 
+function downloadCV(event) {
+  event.preventDefault();
+
+  const data = {
+    name: document.getElementById("visitorName").value,
+    email: document.getElementById("visitorEmail").value,
+    company: document.getElementById("visitorCompany").value,
+    role: document.getElementById("visitorRole").value
+  };
+
+  fetch("https://script.google.com/macros/s/AKfycbxqeE5WZlLb_0osviyQXbZkoY4PfNidG6L4vbVBAkiQqtGpCcKWNIaaLJO897y1YLkN/exec", {
+    method: "POST",
+    mode: "no-cors",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(data)
+  }).then(() => {
+    window.location.href = "cv_Joel.pdf"; // adapte à ton vrai fichier
+  });
+}
+
+
         // Add loading animation
         window.addEventListener('load', function() {
             document.body.style.opacity = '0';
@@ -120,4 +143,6 @@
                 document.body.style.opacity = '1';
             }, 100);
         });
+
+
   
