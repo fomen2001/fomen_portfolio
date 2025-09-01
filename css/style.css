@@ -752,4 +752,20 @@
             0% { transform: translateY(100vh); }
             100% { transform: translateY(-100vh); }
         }
-  
+  .profile-photo {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-photo i {
+  font-size: 150px; /* taille de l’icône */
+  color: #ccc;      /* couleur de fond */
+}
+
+.profile-photo img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%; /* optionnel : arrondi style photo de profil */
+}
